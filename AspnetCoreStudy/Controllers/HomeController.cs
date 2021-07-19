@@ -20,6 +20,19 @@ namespace AspnetCoreStudy.Controllers
 
         public IActionResult Index()
         {
+            var hongUser = new User();
+            hongUser.UserNo = 1;
+            hongUser.UserName = "홍길동";
+
+            //#1번 방식 View(model);
+            //return View(hongUser);
+
+            //#2반 방식 ViewBag
+            //ViewBag.User = hongUser;
+
+            //#3번 방식 ViewData
+            ViewData["UserNo"] = hongUser.UserNo;
+            ViewData["UserName"] = hongUser.UserName;
             return View();
         }
 
