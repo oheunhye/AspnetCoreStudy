@@ -1,0 +1,9 @@
+C:\Users\Y700\source\repos\LibraryApplication.Library\bin\Debug\netstandard2.0\LibraryApplication.Library.deps.json
+C:\Users\Y700\source\repos\LibraryApplication.Library\bin\Debug\netstandard2.0\LibraryApplication.Library.dll
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.csprojAssemblyReference.cache
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.AssemblyInfoInputs.cache
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.AssemblyInfo.cs
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.csproj.CoreCompileInputs.cache
+C:\Users\Y700\source\repos\LibraryApplication.Library\bin\Debug\netstandard2.0\LibraryApplication.Library.pdb
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.dll
+C:\Users\Y700\source\repos\LibraryApplication.Library\obj\Debug\netstandard2.0\LibraryApplication.Library.pdb

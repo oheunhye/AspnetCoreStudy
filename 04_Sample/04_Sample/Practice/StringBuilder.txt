@@ -1,0 +1,8 @@
+﻿StringBuilder클래스
+문자를 연결하여 문자열이 가능하게 해주는 클래스
+using System.Text;
+
+StringBulider sb = new StringBuilder();
+sb.Append("우리나라");	//덧붙임
+sb.Append("대한민국");
+Response.Write(sb.ToString());		->우리나라대한민국

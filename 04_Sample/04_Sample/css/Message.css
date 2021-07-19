@@ -1,0 +1,34 @@
+﻿.msg {
+    width: 500px;
+    height: 100px;
+    margin: 3px;
+    border: solid 3px #909090;
+}
+
+.message-icon {
+    width: 55px;
+    height: 60px;
+    float: left;
+    background-image: url('~/Img/img_info.gif');
+}
+
+.message-btn{
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: bisque;
+}
+
+.message-error{
+    padding: 10px;
+    background-color: #eeaacc;
+    font-size: 1.2em;
+    color: #4433aa;
+}
+
+.message-success {
+    padding: 10px;
+    background-color: #aaeeaa;
+    font-size: 1.2em;
+    color: #303030;
+}
+

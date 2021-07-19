@@ -1,0 +1,10 @@
+﻿body {
+    font-family: Century; color:aquamarine;
+}
+
+h1 { color: #aa99dd; font-size:2em;}
+.lbl { margin-left:15px; width:100px; font-family:Arial, Helvetica, sans-serif;
+       color: #aa99dd; padding:10px;}
+.content1 { width:200px; background-color:#eeeeee; padding:10px; }
+.content2 { margin-left:100px; border: 1px solid #aaeebb; }
+
