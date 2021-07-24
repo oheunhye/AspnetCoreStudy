@@ -24,6 +24,13 @@ namespace AspnetCoreStudy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //DI 의존성 주입 - ASP.NET MVC 4,5+Unity
+
+            //Session 서비스 등록
+            services.AddSession();
+
+            //
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +48,9 @@ namespace AspnetCoreStudy
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            //어플리케이션단위의 session 사용선언
+            app.UseSession();
 
             app.UseRouting();
 

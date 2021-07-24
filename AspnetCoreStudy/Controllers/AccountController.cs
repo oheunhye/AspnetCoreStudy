@@ -1,6 +1,7 @@
 ﻿using AspnetCoreStudy.DataContext;
 using AspnetCoreStudy.Models;
 using AspnetCoreStudy.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,7 +38,11 @@ namespace AspnetCoreStudy.Controllers
 
                     if (user != null)
                     {
-                        //로그인 성공 페이지로 이동
+                        //로그인 성공 
+
+                        //Session설정
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.Result.No);
+
                         return RedirectToAction("LoginSuccess","Home");
                     }
                 }
@@ -46,6 +51,17 @@ namespace AspnetCoreStudy.Controllers
                 ModelState.AddModelError(string.Empty, "사용자 ID 혹은 비밀번호가 올바르지 않습니다.");
             }
             return View();
+        }
+
+        public IActionResult Logout()
+        {
+            //Session 삭제
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+
+            //모든 Session정보를 삭제시
+            //HttpContext.Session.Clear(); 
+
+            return RedirectToAction("Index", "Home");
         }
 
 
