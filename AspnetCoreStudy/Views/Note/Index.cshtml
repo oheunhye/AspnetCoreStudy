@@ -1,0 +1,22 @@
+﻿
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                    <td>@note.No</td>
+                    <td>@note.Title</td>
+                    <td>@note.UserNo</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-info" asp-controller="Note" asp-action="Add">작성하기</a>
