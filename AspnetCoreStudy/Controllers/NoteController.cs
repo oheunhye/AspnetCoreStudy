@@ -30,6 +30,34 @@ namespace AspnetCoreStudy.Controllers
 
                 return View(list);
         }
+        
+        /// <summary>
+        /// 게시물 상세조회
+        /// </summary>
+        /// <param name="intNo"></param>
+        /// <returns></returns>
+        public IActionResult Detail(int NoteNo)
+        {
+            Note mNote = new Note();
+
+            //로그인이 안된 상태
+            if (HttpContext.Session.GetInt32("USER_LOGIN_KEY") == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            using (var db = new AspnetCoreStudyDbContext())
+            {
+                mNote = db.Notes.FirstOrDefault(x => x.No.Equals(NoteNo));
+            }
+
+            if (mNote == null)
+            {
+                
+            }
+
+                return View(mNote);
+        }
 
         /// <summary>
         /// 게시물 추가
