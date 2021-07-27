@@ -29,7 +29,8 @@
                         @if (Context.Session.GetInt32("USER_LOGIN_KEY") == null)
                         {
                             <li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">로그인</a></li>
-                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">회원가입</a></li>                            }
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">회원가입</a></li>
+                        }
                         else
                         {
                             <li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">로그아웃</a></li>
@@ -54,6 +55,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/Trumbowyg/trumbowyg.min.js"></script>
+    <script src="~/Trumbowyg/plugins/upload/trumbowyg.upload.min.js"></script>
+    <script src="~/Trumbowyg/langs/ko.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

@@ -12,7 +12,7 @@
                 @Model.Title
             </div>
             <div class="card-body">
-                @Model.Contents
+                @Html.Raw(Model.Contents)
             </div>
             <div class="card-footer">
                 <a class="btn btn-primary" asp-controller="Note" asp-action="Index">목록</a>
